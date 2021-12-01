@@ -1,3 +1,14 @@
+header {
+  background-image: none;
+  height: auto;
+  opacity: 1;
+}
+header::after {
+  height: 4.8rem;
+}
+.heading {
+  text-align: left;
+}
 .legal-notice {
   width: 80%;
   margin: 0 auto;
@@ -14,8 +25,43 @@
 }
 
 @media only screen and (max-width: 768px) {
+  header::after {
+    height: 4rem;
+  }
+  .nav-menu {
+    background: #000;
+    opacity: 1;
+  }
+  .nav-item > a {
+    color: #fff;
+  }
+  .nav-button a {
+    color: #fff;
+    background-color: #04483c;
+    border-radius: 8px;
+    border: #04483c;
+  }
   .legal-notice {
     width: 100%;
     padding: 3rem;
+  }
+}
+@media only screen and (max-width: 825px) and (orientation: landscape) {
+  header::after {
+    height: 4rem;
+  }
+  .nav-menu {
+    background: #000;
+    opacity: 1;
+    top: 4rem;
+  }
+  .nav-item > a {
+    color: #fff;
+  }
+  .nav-button a {
+    color: #fff;
+    background-color: #04483c;
+    border-radius: 8px;
+    border: #04483c;
   }
 }

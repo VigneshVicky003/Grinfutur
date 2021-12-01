@@ -459,56 +459,19 @@ p {
   justify-content: center;
   padding: 5rem 10%;
 }
-.about > .heading {
-  margin-bottom: 5rem;
-}
-.about > .persons {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.about > .persons > .person {
-  width: 30%;
-  text-align: center;
-}
-.about > .persons > .person img {
-  width: 60%;
-  margin-bottom: 2rem;
-}
-.about > .persons > .person > .role {
-  margin-bottom: 2rem;
-}
+
 .about > .mission {
-  margin: 5rem 0;
-  background-color: rgb(245, 245, 245);
   padding: 2rem 5rem;
   text-align: center;
   width: 70%;
   border-radius: 15px;
 }
-.about > .mission h3 {
+.about > .mission h1 {
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 .about > .mission p {
   margin-bottom: 1rem;
-}
-.about > .backed-by h2 {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.about > .backed-by > .brands {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.about > .backed-by > .brands img {
-  width: 30%;
-}
-.about > .backed-by > .brands > .brand2 {
-  width: 10%;
-}
-.about > .backed-by > .brands > .brand3 {
-  width: 25%;
 }
 
 /* contact us */
@@ -640,6 +603,13 @@ footer > .content a {
 }
 footer > .content a:hover {
   color: #fff;
+  text-decoration: underline;
+}
+footer p a {
+  color: #f5f5f5;
+  padding: 0 1rem;
+}
+footer p a:hover {
   text-decoration: underline;
 }
 
@@ -815,30 +785,10 @@ footer > .content a:hover {
   }
 
   /* about */
-  .about > .persons {
-    flex-direction: column;
-  }
-  .about > .persons > .person {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
+
   .about > .mission {
     width: 95%;
     padding: 2rem 1rem;
-  }
-  .about > .backed-by > .brands {
-    flex-direction: column;
-  }
-  .about > .backed-by > .brands > .brand1 {
-    width: 70%;
-    margin-bottom: 2rem;
-  }
-  .about > .backed-by > .brands > .brand2 {
-    width: 40%;
-    margin-bottom: 2rem;
-  }
-  .about > .backed-by > .brands > .brand3 {
-    width: 60%;
   }
 
   /* contact us */
@@ -1011,9 +961,6 @@ footer > .content a:hover {
   .about {
     padding: 5rem 5%;
   }
-  .about > .persons > .person {
-    width: 32%;
-  }
 }
 
 @media only screen and (device-width: 1024px) and (device-height: 1366px) {
@@ -1034,9 +981,6 @@ footer > .content a:hover {
   }
   .about {
     padding: 5rem 5%;
-  }
-  .about > .persons > .person {
-    width: 32%;
   }
 }
 
@@ -1060,9 +1004,6 @@ footer > .content a:hover {
   .about {
     padding: 5rem 5%;
   }
-  .about > .persons > .person {
-    width: 32%;
-  }
 }
 @media only screen and (device-width: 768px) and (device-height: 1024px) {
   p {
@@ -1084,23 +1025,6 @@ footer > .content a:hover {
   }
   .projects > .parts > .part2 > .card {
     width: 70%;
-  }
-  .about > .persons > .person img {
-    width: 45%;
-  }
-  .about > .backed-by > .brands {
-    flex-direction: row;
-  }
-  .about > .backed-by > .brands > .brand1 {
-    width: 35%;
-    margin: 0;
-  }
-  .about > .backed-by > .brands > .brand2 {
-    width: 15%;
-    margin: 0;
-  }
-  .about > .backed-by > .brands > .brand3 {
-    width: 25%;
   }
 }
 
@@ -1131,35 +1055,26 @@ footer > .content a:hover {
   .about > .heading {
     margin-bottom: 3rem;
   }
-  .about > .persons > .person {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  .about > .persons > .person img {
-    width: 30%;
-  }
+
   .about > .mission {
     width: 95%;
     padding: 2rem 1rem;
-  }
-  .about > .backed-by > .brands {
-    flex-direction: row;
-  }
-  .about > .backed-by > .brands > .brand1 {
-    width: 35%;
-    margin: 0;
-  }
-  .about > .backed-by > .brands > .brand2 {
-    width: 15%;
-    margin: 0;
-  }
-  .about > .backed-by > .brands > .brand3 {
-    width: 25%;
   }
 }
 
 @media only screen and (max-width: 340px) {
   .tooltip .tooltiptext {
     width: 250px;
+  }
+}
+@media only screen and (max-width: 750px) and (orientation: landscape) {
+  .max-min {
+    padding: 5rem 5%;
+  }
+  .max-min > .tabs {
+    flex-direction: row;
+  }
+  .max-min > .tabs > .tab {
+    width: 31%;
   }
 }
